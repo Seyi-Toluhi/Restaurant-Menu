@@ -1,11 +1,20 @@
-h1{ text-align: center;
-    text-decoration:underline;
-    text-decoration-color: rgb(167, 124, 110);
+h1{  
+    text-align:center;
+    text-decoration:overline;
+    text-decoration-color: rgb(110, 109, 108);
 }
 
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/10/18/06/rose-1448610_1280.jpg);
+    background-repeat:no-repeat;
+    background-position:top;
+    background-size: cover;
+}
 #header-container{
-    margin-top: 5%;
-
+    margin-top: 9%;
+    display:flex;
+flex-direction: column;
+align-items: center;
 }
 
 .btn-container{display:flex;
@@ -15,9 +24,9 @@ margin-top: 3%;
 
 }
 
-.menu{border: solid rgb(219, 182, 164);
+.menu{/*border: solid rgb(219, 182, 164);
     text-decoration-color: burlywood;
-border-radius: 5px;}
+border-radius: 5px;*/}
 
 #all-menu{margin-right: 5px;}
 
@@ -27,14 +36,20 @@ border-radius: 5px;}
 
 #treats-menu{margin-right: 5px;}
 
+#showMeals{border: solid rgb(82, 51, 36);
+    text-decoration-color: burlywood;
+border-radius: 5px;
+margin-top: 5%;}
+
 .meal-container{
    position: absolute;
-   background: rgb(247, 247, 247);
+   /*background: rgb(230, 224, 224);*/
+   
    top: 180px;
-   right: 250px;
-    margin-top: 5%;
+   right: 220px;
+    margin-top: 12%;
     display: grid;
-    grid-template-columns: 500px 500px ;
+    grid-template-columns: 400px 400px ;
     
 }
 
@@ -50,3 +65,28 @@ border-radius: 5px;}
     grid-template-columns: 150px 150px 200px;
    
     }
+.btn-group{
+   
+position: absolute;
+bottom: 50%;
+left: 30%;}
+
+button{margin-left:55px;
+    margin-top: 35px;
+    height: 20%;
+width: 35%;
+font-weight: 700;
+border-radius: 10%;
+font-style:;
+font-size: large;
+background-color: rgb(231, 231, 226);
+padding: 0 0 0 0;}
+
+.lists{
+color:darkolivegreen;}
+
+.dropdown-menu {background-color:rosybrown;}
+
+@media (min-width: 1264px) {
+    .meal-container{flex-wrap: wrap;}
+}
